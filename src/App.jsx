@@ -8,12 +8,14 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <Countcontext.Provider value={count}>
-     <Count count={count}/> 
-    </Countcontext.Provider>
+    <div>
+      <Countcontext.Provider value={count}>
+      <Count count={count}/> 
+      </Countcontext.Provider>
      
-    </>
+    </div>
+    
+    
   )
 }
 function Count({count}){
